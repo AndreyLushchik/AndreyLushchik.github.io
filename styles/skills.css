@@ -37,25 +37,19 @@
 
 @media screen and (max-width: 1200px) {
   .skills > div {
-    font-size: 10px;
+    width: 80%;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 1024px) {
   .skills > div {
-    width: 80%;
+    width: auto;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 768px) {
-  .skills > div {
-    gap: 10px;
-  }
   .skills-discription figcaption {
     gap: 5px;
-  }
-}
-@media screen and (max-width: 560px) {
-  .skills > div {
-    width: 75%;
-    justify-content: flex-start;
   }
 }
