@@ -29,7 +29,7 @@ function showpopup(n) {
 }
 
 function currentImage() {
-  popupContainer.style.display = 'block';
+  popupContainer.style.display = 'flex';
 
   let imageIndex = parseInt(this.getAttribute('data-index'));
   showpopup((index = imageIndex));
