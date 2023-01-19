@@ -3,14 +3,10 @@
   flex-direction: row;
   justify-content: space-around;
   max-width: var(--width-content);
-  width: 70%;
   padding: 50px 0;
 }
 
-#contacts > * {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+#contacts > a {
+  padding: 0 10px;
   font-size: 1.6rem;
-  gap: 10px;
 }
