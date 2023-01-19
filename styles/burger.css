@@ -1,0 +1,84 @@
+.burger {
+  display: none;
+}
+
+.burger-btn {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.burger-btn span {
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  transition: all 0.5s;
+}
+.burger-btn_center {
+  content: '';
+  background: none;
+}
+
+.burger-btn span:nth-of-type(2) {
+  top: calc(50% - 10px);
+}
+.burger-btn span:nth-of-type(3) {
+  top: calc(50% + 10px);
+}
+
+.burger-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.burger-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+  z-index: 2;
+  background-color: white;
+}
+.burger-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+  z-index: 2;
+  background-color: white;
+}
+
+.burger-drop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+  padding-left: 0px;
+  background: rgba(0, 0, 0, 0.623);
+  transform: translateY(-150%);
+  transition: transform 0.5s;
+  font-size: 3rem;
+}
+
+.burger-drop ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+.burger-drop.active {
+  transform: translateY(0);
+}
+.burger-drop li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+  .burger {
+    display: block;
+  }
+}

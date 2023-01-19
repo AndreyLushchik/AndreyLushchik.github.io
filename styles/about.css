@@ -1,0 +1,21 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 0;
+  max-width: var(--width-content);
+  gap: 30px;
+  align-items: center;
+}
+#about > h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+#about > article {
+  max-width: 60%;
+  min-width: 300px;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #727272;
+  line-height: 2;
+}

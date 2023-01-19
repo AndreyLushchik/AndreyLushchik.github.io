@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/header.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/burger.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/greeting.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/about.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/skills.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/gallery.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/contacts.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/footer.css"
+    />
+    <script
+      src="./index.js"
+      defer
+    ></script>
+    <title>ZeroToHero</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="navigation">
+          <a href="#top"
+            ><img
+              class="navigation-logo"
+              src="./image/icons/Logo.png"
+              alt=""
+              width="74px"
+              height="37px"
+          /></a>
+          <nav class="navigation-menu">
+            <ul class="navigation-list">
+              <li><a href="#top">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#gallery">Works</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="burger">
+            <div class="burger-btn">
+              <span class="burger-btn_center"></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="burger-drop">
+              <nav>
+                <ul>
+                  <li><a href="#top">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#gallery">Works</a></li>
+                  <li><a href="#">Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="greeting">
+          <div>
+            <img
+              class="greeting-image"
+              src="./image/greeting.jpg"
+              alt="my photo"
+            />
+            <div class="greeting-about">
+              <h2>Andrey Lushchik</h2>
+              <h3>Frontend Developer</h3>
+              <article>
+                27 years old <br />
+                Belarus Minsk
+              </article>
+              <a
+                class="greeting-cv"
+                href="./resume/LushchikAndrey_en.pdf"
+                download
+                >Download CV</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="about">
+          <h2>About Me</h2>
+          <article>
+            Hi! I am а front end developer. I have experience creating а SPA
+            using React, Redux, TypeScript, HTML and CSS. I am currently focused
+            on improving my skills with the help of new technologies and tools.
+            My hobbies are solving puzzles оп Codewars, reading books about
+            coding and watching tutorial videos. I keep polishing my English
+            through apps, reading articles, documentation and watching TV shows.
+            I like to learn something new.
+          </article>
+        </div>
+        <div class="skills">
+          <div>
+            <figure class="skills-discription">
+              <img
+                src="./image/icons/frontend.png"
+                alt=""
+                width="64px"
+                height="64px"
+              />
+              <figcaption>
+                <p>HTML, CSS</p>
+                <p>JavaScript, TypeScript</p>
+                <p>React, Redux</p>
+              </figcaption>
+            </figure>
+            <figure class="skills-discription">
+              <img
+                src="./image/icons/backend.png"
+                alt=""
+                width="64px"
+                height="64px"
+              />
+              <figcaption>
+                <p>Node.js, MySQL</p>
+                <p>RESTfulAPI, AXIOS</p>
+              </figcaption>
+            </figure>
+            <figure class="skills-discription">
+              <img
+                src="./image/icons/maintenance.png"
+                alt=""
+                width="64px"
+                height="64px"
+              />
+              <figcaption>
+                <p>Unit Test, JEST</p>
+                <p>Figma, Material UI</p>
+                <p>Git</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div id="gallery">
+          <div
+            class="gallery-item"
+            data-index="1"
+          >
+            <img
+              src="./image/gallery/Carfume.PNG"
+              alt="Carfume"
+            />
+          </div>
+          <div
+            class="gallery-item"
+            data-index="2"
+          >
+            <img
+              src="./image/gallery/engineering-diagnostics.PNG"
+              alt="Engineering diagnostics"
+            />
+          </div>
+          <div
+            class="gallery-item"
+            data-index="3"
+          >
+            <img
+              src="./image/gallery/image-slider.PNG"
+              alt="Image slider"
+            />
+          </div>
+          <div
+            class="gallery-item"
+            data-index="4"
+          >
+            <img
+              src="./image/gallery/SimpleNote.PNG"
+              alt="SimpleNote"
+            />
+          </div>
+          <div
+            class="gallery-item"
+            data-index="5"
+          >
+            <img
+              src="./image/gallery/Virtual tour.PNG"
+              alt="Virtual tour"
+            />
+          </div>
+          <div
+            class="gallery-item"
+            data-index="6"
+          >
+            <img
+              src="./image/gallery/Weiss.PNG"
+              alt="Weiss"
+            />
+          </div>
+        </div>
+        <div id="contacts">
+          <div>
+            <img
+              src="./image/icons/gmail.png"
+              alt="andreylushchik56@gmail.com"
+            />
+            <p>andreylushchik56@gmail.com</p>
+          </div>
+          <a href="https://www.linkedin.com/in/andrey-lushchik-370655213/"
+            ><img
+              src="./image/icons/linkedin.png"
+              alt="LinkedIn link"
+            />
+            <p>linkedIn</p></a
+          >
+          <a href="https://github.com/AndreyLushchik"
+            ><img
+              src="./image/icons/github.png"
+              alt="github link"
+            />
+            <p>GitHub</p></a
+          >
+          <a href="https://www.codewars.com/users/Gunner56">
+            <img
+              src="./image/icons/codewars.png"
+              alt="codewars link"
+            />
+            <p>Codewars</p></a
+          >
+        </div>
+      </div>
+      <footer class="footer">
+        <span>
+          <h3>Andrey Lushchik</h3>
+          <p>(с) 2023. All rights reserved.</p>
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>
