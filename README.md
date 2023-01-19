@@ -10,4 +10,4 @@ Test assignment on the documentation of the course JS From Zero To Hero 2023 fro
 
 or 
 
-Щpen the link https://andreylushchik.github.io/
+Open the link https://andreylushchik.github.io/
